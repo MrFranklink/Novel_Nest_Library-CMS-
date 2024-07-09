@@ -1,0 +1,61 @@
+.book-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.book-card-inner img {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-card-inner {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-card:hover .book-card-inner img {
+    transform: scale(1.05);
+}
+
+.cart-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.cart-icon:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.book-info {
+    transition: color 0.3s ease;
+}
+
+.book-info h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.book-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.book-info div:last-child p {
+    font-size: 1.1rem;
+    color: #1e40af; /* Tailwind's blue-700 color */
+}

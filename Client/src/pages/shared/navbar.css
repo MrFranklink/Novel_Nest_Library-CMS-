@@ -1,0 +1,43 @@
+/* navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+nav button:focus {
+  outline: none;
+}
+
+nav button:hover {
+  color: #a3e635; /* Lime green */
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
